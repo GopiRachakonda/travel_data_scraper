@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Distribution</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 65%;  /* Adjust the width of the images */
+            border: 1px solid #000;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Flight & Hotel Price Distribution</h1>
+    <div class="container">
+        <div>
+            <h3>Flight Price Distribution</h3>
+            <img src="{{ url_for('static', filename='flight_price_plot.png') }}" alt="Flight Price Distribution">
+        </div>
+        <div>
+            <h3>Hotel Price Distribution</h3>
+            <img src="{{ url_for('static', filename='hotel_price_plot.png') }}" alt="Hotel Price Distribution">
+        </div>
+    </div>
+</body>
+</html>
+
+
